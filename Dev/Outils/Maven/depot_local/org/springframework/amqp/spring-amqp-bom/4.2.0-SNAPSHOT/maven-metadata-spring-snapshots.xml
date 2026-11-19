@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.springframework.amqp</groupId>
+  <artifactId>spring-amqp-bom</artifactId>
+  <versioning>
+    <lastUpdated>20261119051858</lastUpdated>
+    <snapshot>
+      <timestamp>20261119.051643</timestamp>
+      <buildNumber>219</buildNumber>
+    </snapshot>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>4.2.0-20261119.051643-219</value>
+        <updated>20261119051643</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>module</extension>
+        <value>4.2.0-20261119.051643-219</value>
+        <updated>20261119051643</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+  <version>4.2.0-SNAPSHOT</version>
+</metadata>

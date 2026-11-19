@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 19 14:50:30 CET 2026
+spring-integration-bom-7.2.0-20261117.052838-235.pom>spring-snapshots=
+spring-integration-bom-7.2.0-20261117.052838-235.pom>spring-snapshots-8a95affa5b50ac0fbc9d46051d3f90e17db7ad23=
+spring-integration-bom-7.2.0-SNAPSHOT.pom>spring-snapshots-8a95affa5b50ac0fbc9d46051d3f90e17db7ad23=

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire Etudiant</title>
+</head>
+<body>
+    <h2>Ajouter un étudiant</h2>
+
+    <form th:action="@{/etudiants/ajouter}" th:object="${etudiant}" method="post">
+        <div>
+            <label>Numéro inscription :</label><br>
+            <input type="text" th:field="*{numeroInscription}" required />
+        </div><br>
+
+        <div>
+            <label>Nom :</label><br>
+            <input type="text" th:field="*{nom}" required />
+        </div><br>
+
+        <div>
+            <label>Prénom :</label><br>
+            <input type="text" th:field="*{prenom}" required />
+        </div><br>
+
+        <div>
+            <label>Date de naissance :</label><br>
+            <input type="date" th:field="*{dateNaissance}" required />
+        </div><br>
+
+        <div>
+            <label>Moyenne de l'année précédente :</label><br>
+            <input type="number" step="0.01" th:field="*{moyenneAnneePrecedente}" required />
+        </div><br>
+
+        <div>
+            <label>Niveau d'étude :</label><br>
+            <input type="number" th:field="*{niveauEtude}" required />
+        </div><br>
+
+        <button type="submit">Ajouter</button>
+    </form>
+
+    <br>
+    <a th:href="@{/etudiants/liste}">Voir la liste des étudiants</a>
+</body>
+</html>

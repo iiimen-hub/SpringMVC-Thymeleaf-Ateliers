@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>io.micrometer</groupId>
+  <artifactId>micrometer-bom</artifactId>
+  <versioning>
+    <lastUpdated>20261116160512</lastUpdated>
+    <snapshot>
+      <timestamp>20261116.155816</timestamp>
+      <buildNumber>316</buildNumber>
+    </snapshot>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom.asc</extension>
+        <value>1.18.0-20261116.155816-316</value>
+        <updated>20261116155816</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom.sha512</extension>
+        <value>1.18.0-20261116.155816-316</value>
+        <updated>20261116155816</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.18.0-20261116.155816-316</value>
+        <updated>20261116155816</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+  <version>1.18.0-SNAPSHOT</version>
+</metadata>

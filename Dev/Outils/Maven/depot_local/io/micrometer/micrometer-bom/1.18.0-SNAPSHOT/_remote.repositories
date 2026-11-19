@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 19 14:50:29 CET 2026
+micrometer-bom-1.18.0-20261116.155816-316.pom>spring-snapshots=
+micrometer-bom-1.18.0-20261116.155816-316.pom>spring-snapshots-8a95affa5b50ac0fbc9d46051d3f90e17db7ad23=
+micrometer-bom-1.18.0-SNAPSHOT.pom>spring-snapshots-8a95affa5b50ac0fbc9d46051d3f90e17db7ad23=

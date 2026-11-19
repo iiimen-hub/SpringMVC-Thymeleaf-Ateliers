@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Liste des étudiants</title>
+</head>
+<body>
+    <h2>Liste des étudiants</h2>
+
+    <a th:href="@{/etudiants/formulaire}">Ajouter un nouvel étudiant</a>
+    <br><br>
+
+    <table border="1" cellpadding="6" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Numéro inscription</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Date de naissance</th>
+                <th>Moyenne année précédente</th>
+                <th>Niveau d'étude</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="et : ${etudiants}">
+                <td th:text="${et.numeroInscription}"></td>
+                <td th:text="${et.nom}"></td>
+                <td th:text="${et.prenom}"></td>
+                <td th:text="${et.dateNaissance}"></td>
+                <td th:text="${et.moyenneAnneePrecedente}"></td>
+                <td th:text="${et.niveauEtude}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
