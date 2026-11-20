@@ -33,4 +33,17 @@ public class EtudiantController {
         model.addAttribute("etudiants", etudiantService.lister());
         return "liste";
     }
+
+    @GetMapping("/modifier/{id}")
+    public String afficherFormulaireModification(@PathVariable("id") Long id, Model model) {
+        Etudiant etudiant = etudiantService.trouverParId(id);
+        model.addAttribute("etudiant", etudiant);
+        return "formulaire";
+    }
+
+    @GetMapping("/supprimer/{id}")
+    public String supprimerEtudiant(@PathVariable("id") Long id) {
+        etudiantService.supprimer(id);
+        return "redirect:/etudiants/liste";
+    }
 }

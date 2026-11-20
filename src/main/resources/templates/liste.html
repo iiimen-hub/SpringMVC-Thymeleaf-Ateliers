@@ -19,6 +19,7 @@
                 <th>Date de naissance</th>
                 <th>Moyenne année précédente</th>
                 <th>Niveau d'étude</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -29,6 +30,14 @@
                 <td th:text="${et.dateNaissance}"></td>
                 <td th:text="${et.moyenneAnneePrecedente}"></td>
                 <td th:text="${et.niveauEtude}"></td>
+                <td>
+                    <a th:href="@{/etudiants/modifier/{id}(id=${et.id})}">Modifier</a>
+                    |
+                    <a th:href="@{/etudiants/supprimer/{id}(id=${et.id})}"
+                       onclick="return confirm('Voulez-vous vraiment supprimer cet étudiant ?');">
+                        Supprimer
+                    </a>
+                </td>
             </tr>
         </tbody>
     </table>

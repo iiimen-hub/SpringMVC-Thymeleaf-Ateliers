@@ -5,9 +5,13 @@
     <title>Formulaire Etudiant</title>
 </head>
 <body>
-    <h2>Ajouter un étudiant</h2>
+    <h2 th:text="${etudiant.id != null} ? 'Modifier un étudiant' : 'Ajouter un étudiant'">
+        Ajouter un étudiant
+    </h2>
 
     <form th:action="@{/etudiants/ajouter}" th:object="${etudiant}" method="post">
+        <input type="hidden" th:field="*{id}" />
+
         <div>
             <label>Numéro inscription :</label><br>
             <input type="text" th:field="*{numeroInscription}" required />
@@ -38,7 +42,9 @@
             <input type="number" th:field="*{niveauEtude}" required />
         </div><br>
 
-        <button type="submit">Ajouter</button>
+        <button type="submit" th:text="${etudiant.id != null} ? 'Enregistrer' : 'Ajouter'">
+            Ajouter
+        </button>
     </form>
 
     <br>

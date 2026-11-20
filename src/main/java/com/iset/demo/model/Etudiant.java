@@ -1,30 +1,37 @@
 package com.iset.demo.model;
 
+import jakarta.persistence.*;
 import java.time.LocalDate;
-import org.springframework.format.annotation.DateTimeFormat;
 
+@Entity
+@Table(name = "etudiants")
 public class Etudiant {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(nullable = false, unique = true)
     private String numeroInscription;
+
+    @Column(nullable = false)
     private String nom;
+
+    @Column(nullable = false)
     private String prenom;
 
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate dateNaissance;
 
     private double moyenneAnneePrecedente;
+
     private int niveauEtude;
 
-    public Etudiant() {}
-
-    public Etudiant(String numeroInscription, String nom, String prenom,
-                    LocalDate dateNaissance, double moyenneAnneePrecedente, int niveauEtude) {
-        this.numeroInscription = numeroInscription;
-        this.nom = nom;
-        this.prenom = prenom;
-        this.dateNaissance = dateNaissance;
-        this.moyenneAnneePrecedente = moyenneAnneePrecedente;
-        this.niveauEtude = niveauEtude;
+    public Etudiant() {
     }
+
+    // Getters & Setters
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
 
     public String getNumeroInscription() { return numeroInscription; }
     public void setNumeroInscription(String numeroInscription) { this.numeroInscription = numeroInscription; }
